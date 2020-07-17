@@ -1,0 +1,57 @@
+.c-accent {
+  color: #111;
+}
+
+.c-main {
+  color: #444;
+}
+
+.c-faded {
+  color: #646464;
+}
+
+.c-xfaded {
+  color: #dadada;
+}
+
+.bg-accent {
+  background-color: #f8f8f8;
+}
+
+.t-smooth {
+  transition: all 300ms ease;
+}
+
+.font-caps {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #111;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.branding {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 14px 0;
+}
+
+.nav-icon {
+  font-size: 2rem;
+}
