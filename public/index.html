@@ -1,18 +1,21 @@
 <html>
 
 <head>
-  <title>Express</title>
+  <title>Branding</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body class="c-main">
   
+  <div id="home"></div>
+
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top t-smooth">
-    <a class="navbar-brand branding" href="/">Branding</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white t-smooth">
+    <a class="navbar-brand branding" href="/">Branding.</a>
     <button id="nav-open" class="navbar-toggler" type="button" style="border: none;">
       <i class="fa fa-bars nav-icon t-smooth"></i>
     </button>
@@ -20,23 +23,222 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto font-caps">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Content -->
+  <!-- Mobile navigation -->
+  <div id="nav-menu" style="z-index: 2000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; display: none;">
+    <nav class="navbar">
+      <div style="height: 76px;"></div>
+      <button id="nav-close" class="navbar-toggler" type="button" style="border: none;">
+        <i class="fa fa-close nav-icon t-smooth" style="font-size: 2.2rem; transform: translateY(-2px);"></i>
+      </button>
+    </nav>
 
+    <div class="content-spacer-small"></div>
+
+    <div class="d-flex flex-column align-items-center font-caps text-center">
+      <div class="d-flex justify-content-center">
+        <a href="/" class="footer-icon icon-light"><i class="fa fa-instagram"></i></a>
+        <a href="/" class="footer-icon icon-light"><i class="fa fa-twitter"></i></a>
+        <a href="/" class="footer-icon icon-light"><i class="fa fa-github"></i></a>
+      </div>
+
+      <div class="content-spacer-small"></div>
+
+      <a class="overnav-link" href="#home-mobile">Home</a>
+      <a class="overnav-link" href="#about-mobile">About</a>
+      <a class="overnav-link" href="#contact-mobile">Contact</a>
+    </div>
+  </div>
+
+  <!-- Landing showcase -->
+  <div class="landing-showcase side-spacer">
+
+    <div style="position: relative;">
+      <div class="landing">
+        <p class="landing-intro">Branding</p>
+        <h1 class="landing-heading c-accent">Green MockUp</h1>
+        <p class="landing-desc c-accent mb-4" style="max-width: 700px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, soluta animi tempore inventore fugiat sapiente veritatis labore, aut culpa voluptas ipsa sequi blanditiis quo asperiores</p>
+        <a class="btn btn-action t-smooth" href="#contact">Contact <i class="fa fa-long-arrow-right arrow-landing t-smooth"></i></a>
+      </div>
+      <img src="/images/landing-1.jpg" alt="landing">
+    </div>
+
+    <div style="position: relative;">
+      <div class="landing">
+        <p class="landing-intro">Branding</p>
+        <h1 class="landing-heading c-accent">Green MockUp</h1>
+        <p class="landing-desc c-accent mb-4" style="max-width: 700px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, soluta animi tempore inventore fugiat sapiente veritatis labore, aut culpa voluptas ipsa sequi blanditiis quo asperiores</p>
+        <a class="btn btn-action t-smooth" href="#contact">Contact <i class="fa fa-long-arrow-right arrow-landing t-smooth"></i></a>
+      </div>
+      <img src="/images/landing-2.jpg" alt="landing">
+    </div>
+
+  </div>
+
+  <!-- About section -->
+  <div id="about" class="container">
+    <div class="content-spacer"></div>
+
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <img src="/images/about-1.jpg" class="img-centered-responsive img-about" alt="about">
+      </div>
+      <div class="col-12 col-md-7 my-auto pl-3 pl-md-5 pt-5 pt-md-0 pr-0 pr-lg-5" style="position: relative;">
+        <h2 class="side-title c-xfaded">About Me</h2>
+        <h5 class="c-accent">Nostrum quis sapiente accusantium adipisicing elit</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum quis sapiente accusantium qui est ad cupiditate maiores similique facere, eligendi quam eaque nesciunt maxime praesentium suscipit molestiae labore nisi.</p>
+        <p>Nostrum quis sapiente accusantium qui est ad cupiditate maiores similique facere, eligendi quam eaque nesciunt maxime praesentium suscipit molestiae labore nisi. Eos ullam amet a animi, iste nihil rerum quaerat facere similique</p>
+      </div>
+    </div>
+
+    <div class="content-spacer"></div>
+  </div>
+
+  <!-- Portfolio section -->
+  <div class="bg-accent">
+    <div class="container">
+      <div class="content-spacer"></div>
+
+      <div class="text-center font-fcaps">
+        <h2 class="section-title c-accent">Here's my portfolio</h2>
+        <p class="section-subtitle c-faded">These are the projects I have worked on</p>
+      </div>
+
+      <div class="content-spacer"></div>
+
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6">
+          <img src="https://source.unsplash.com/760x550/?woman" class="img-centered-responsive" alt="woman">
+        </div>
+
+        <div class="col-12 col-md-6 my-auto pl-0 pl-md-5 pt-5 pt-md-0">
+          <p class="portfolio-intro c-faded"><i class="fa fa-tag c-accent"></i> Advertising, Branding</p>
+          <h3 class="c-accent">Placeat impedit, quisquam inventore voluptas accusantium</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit blanditiis tempore dicta corporis impedit odio optio praesentium minus</p>
+          <p class="c-faded mb-0"><i class="fa fa-clock-o c-accent"></i> October 26, 2019</p>
+        </div>
+      </div>
+
+      <div class="content-spacer"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content-spacer"></div>
+
+    <div class="row no-gutters flex-row-reverse">
+      <div class="col-12 col-md-6">
+        <img src="https://source.unsplash.com/760x550/?girl" class="img-centered-responsive" alt="girl">
+      </div>
+
+      <div class="col-12 col-md-6 my-auto pr-0 pr-md-5 pt-5 pt-md-0">
+        <p class="portfolio-intro c-faded"><i class="fa fa-tag c-accent"></i> Advertising, Branding</p>
+        <h3 class="c-accent">Placeat impedit, quisquam inventore voluptas accusantium</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit blanditiis tempore dicta corporis impedit odio optio praesentium minus</p>
+        <p class="c-faded mb-0"><i class="fa fa-clock-o c-accent"></i> October 26, 2019</p>
+      </div>
+    </div>
+
+    <div class="content-spacer"></div>
+
+    <div class="row no-gutters">
+      <div class="col-12 col-md-6">
+        <img src="https://source.unsplash.com/760x550/?man" class="img-centered-responsive" alt="man">
+      </div>
+
+      <div class="col-12 col-md-6 my-auto pl-0 pl-md-5 pt-5 pt-md-0">
+        <p class="portfolio-intro c-faded"><i class="fa fa-tag c-accent"></i> Advertising, Branding</p>
+        <h3 class="c-accent">Placeat impedit, quisquam inventore voluptas accusantium</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit blanditiis tempore dicta corporis impedit odio optio praesentium minus</p>
+        <p class="c-faded mb-0"><i class="fa fa-clock-o c-accent"></i> October 26, 2019</p>
+      </div>
+    </div>
+
+    <div class="content-spacer"></div>
+  </div>
+
+  <!-- Contact section -->
+  <div id="contact" class="bg-accent">
+    <div class="container">
+      <div class="content-spacer"></div>
+  
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <img src="/images/contact-1.jpg" class="img-centered-responsive img-about" alt="about">
+        </div>
+        <div class="col-12 col-md-7 my-auto pl-3 pl-md-5 pt-5 pt-md-0 pr-0 pr-lg-5" style="position: relative;">
+          <h2 class="side-title c-xfaded">Contact Me</h2>
+          <h5 class="c-accent">Nostrum quis sapiente accusantium adipisicing elit</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum quis sapiente accusantium qui est ad cupiditate maiores similique facere, eligendi quam eaque nesciunt maxime praesentium suscipit molestiae labore nisi.</p>
+          <p><i class="fa fa-phone c-accent" style="transform: scale(1.2); margin-right: 1rem;"></i> +44 7846 00000</p>
+          <p><i class="fa fa-envelope-o c-accent" style="transform: scale(1.2); margin-right: 1rem;"></i> hello@something.com</p>  
+        </div>
+      </div>
+  
+      <div class="content-spacer"></div>
+    </div>
+  </div>
+
+  <!-- Site footer -->
+  <div class="bg-footer">
+    <div class="container">
+      <div class="content-spacer"></div>
+
+      <div class="text-center d-flex justify-content-between align-items-center flex-column flex-md-row">
+
+        <div class="d-flex justify-content-center mb-5 mb-md-0">
+          <a href="/" class="footer-icon t-smooth"><i class="fa fa-instagram"></i></a>
+          <a href="/" class="footer-icon t-smooth"><i class="fa fa-twitter"></i></a>
+          <a href="/" class="footer-icon t-smooth"><i class="fa fa-github"></i></a>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center mb-5 mb-md-0">
+          <div style="position: relative; width: 48px; height: 180px;">
+            <a class="branding footer-branding" href="/">
+              <span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-90deg);">Branding.</span>
+            </a>
+          </div>
+          
+          <ul class="footer-nav text-left" style="transform: translateY(6px);">
+            <li><a href="#home" class="footer-link t-smooth">Home</a></li>
+            <li><a href="#about" class="footer-link t-smooth">About Us</a></li>
+            <li><a href="#contact" class="footer-link t-smooth">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <p class="c-footer mb-0">Made with <i class="fa fa-heart"></i> by <a class="footer-link t-smooth" style="text-decoration: underline;" href="/">Romas</a></p>
+      </div>
+
+      <div class="content-spacer"></div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.landing-showcase').slick({
+      prevArrow: '<button class="btn btn-showcase t-smooth" type="button" style="right: 73px;"><i class="fa fa-angle-left arrow-showcase"></i></button>',
+      nextArrow: '<button class="btn btn-showcase t-smooth" type="button" style="right: 0;"><i class="fa fa-angle-right arrow-showcase"></i></button>',
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 8000
+    });
+  </script>
+  <script src="/javascripts/nav-mobile.js"></script>
+  <script src="/javascripts/smooth-scroll.js"></script>
+  <script src="/javascripts/nav-style.js"></script>
 </body>
 
 </html>
