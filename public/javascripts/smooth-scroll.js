@@ -11,6 +11,11 @@ $(document).ready(function () {
     smoothScroll("#about");
   });
 
+  $("a[href='#portfolio']").click(function(event) {
+    event.preventDefault();
+    smoothScroll("#portfolio");
+  });
+
   $("a[href='#contact']").click(function(event) {
     event.preventDefault();
     smoothScroll("#contact");
@@ -24,6 +29,11 @@ $(document).ready(function () {
   $("a[href='#about-mobile']").click(function(event) {
     event.preventDefault();
     menu.fadeOut(300, function() { smoothScroll("#about") });
+  });
+
+  $("a[href='#portfolio-mobile']").click(function(event) {
+    event.preventDefault();
+    menu.fadeOut(300, function() { smoothScroll("#portfolio") });
   });
 
   $("a[href='#contact-mobile']").click(function(event) {
